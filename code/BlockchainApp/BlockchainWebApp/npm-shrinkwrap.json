@@ -5309,3 +5309,130 @@
     },
     "postcss-svgo": {
       "version": "2.1.6",
+      "resolved": "https://registry.npmjs.org/postcss-svgo/-/postcss-svgo-2.1.6.tgz",
+      "integrity": "sha1-tt8YqmE7Zm4TPwittSGcJoSsEI0=",
+      "dev": true,
+      "requires": {
+        "is-svg": "2.1.0",
+        "postcss": "5.2.17",
+        "postcss-value-parser": "3.3.0",
+        "svgo": "0.7.2"
+      }
+    },
+    "postcss-unique-selectors": {
+      "version": "2.0.2",
+      "resolved": "https://registry.npmjs.org/postcss-unique-selectors/-/postcss-unique-selectors-2.0.2.tgz",
+      "integrity": "sha1-mB1X0p3csz57Hf4f1DuGSfkzyh0=",
+      "dev": true,
+      "requires": {
+        "alphanum-sort": "1.0.2",
+        "postcss": "5.2.17",
+        "uniqs": "2.0.0"
+      }
+    },
+    "postcss-value-parser": {
+      "version": "3.3.0",
+      "resolved": "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-3.3.0.tgz",
+      "integrity": "sha1-h/OPnxj3dKSrTIojL1xc6IcqnRU=",
+      "dev": true
+    },
+    "postcss-zindex": {
+      "version": "2.2.0",
+      "resolved": "https://registry.npmjs.org/postcss-zindex/-/postcss-zindex-2.2.0.tgz",
+      "integrity": "sha1-0hCd3AVbka9n/EyzsCWUZjnSryI=",
+      "dev": true,
+      "requires": {
+        "has": "1.0.1",
+        "postcss": "5.2.17",
+        "uniqs": "2.0.0"
+      }
+    },
+    "preboot": {
+      "version": "4.5.2",
+      "resolved": "https://registry.npmjs.org/preboot/-/preboot-4.5.2.tgz",
+      "integrity": "sha1-yzSSCZWMK0jX90E3s0mbu+VHKl4=",
+      "dev": true
+    },
+    "prepend-http": {
+      "version": "1.0.4",
+      "resolved": "https://registry.npmjs.org/prepend-http/-/prepend-http-1.0.4.tgz",
+      "integrity": "sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=",
+      "dev": true
+    },
+    "preserve": {
+      "version": "0.2.0",
+      "resolved": "https://registry.npmjs.org/preserve/-/preserve-0.2.0.tgz",
+      "integrity": "sha1-gV7R9uvGWSb4ZbMQwHE7yzMVzks=",
+      "dev": true
+    },
+    "private": {
+      "version": "0.1.7",
+      "resolved": "https://registry.npmjs.org/private/-/private-0.1.7.tgz",
+      "integrity": "sha1-aM5eih7woju1cMwoU3tTMqumPvE=",
+      "dev": true
+    },
+    "process": {
+      "version": "0.11.10",
+      "resolved": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
+      "integrity": "sha1-czIwDoQBYb2j5podHZGn1LwW8YI=",
+      "dev": true
+    },
+    "process-nextick-args": {
+      "version": "1.0.7",
+      "resolved": "https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-1.0.7.tgz",
+      "integrity": "sha1-FQ4gt1ZZCtP5EJPyWk8q2L/zC6M=",
+      "dev": true
+    },
+    "prr": {
+      "version": "0.0.0",
+      "resolved": "https://registry.npmjs.org/prr/-/prr-0.0.0.tgz",
+      "integrity": "sha1-GoS4WQgyVQFBGFPQCB7j+obikmo=",
+      "dev": true
+    },
+    "public-encrypt": {
+      "version": "4.0.0",
+      "resolved": "https://registry.npmjs.org/public-encrypt/-/public-encrypt-4.0.0.tgz",
+      "integrity": "sha1-OfaZ86RlYN1eusvKaTyvfGXBjMY=",
+      "dev": true,
+      "requires": {
+        "bn.js": "4.11.7",
+        "browserify-rsa": "4.0.1",
+        "create-hash": "1.1.3",
+        "parse-asn1": "5.1.0",
+        "randombytes": "2.0.5"
+      }
+    },
+    "punycode": {
+      "version": "1.4.1",
+      "resolved": "https://registry.npmjs.org/punycode/-/punycode-1.4.1.tgz",
+      "integrity": "sha1-wNWmOycYgArY4esPpSachN1BhF4=",
+      "dev": true
+    },
+    "q": {
+      "version": "1.5.0",
+      "resolved": "https://registry.npmjs.org/q/-/q-1.5.0.tgz",
+      "integrity": "sha1-3QG6ydBtMObyGa7LglPunr3DCPE=",
+      "dev": true
+    },
+    "qjobs": {
+      "version": "1.1.5",
+      "resolved": "https://registry.npmjs.org/qjobs/-/qjobs-1.1.5.tgz",
+      "integrity": "sha1-ZZ3p8s+NzCehSBJ28gU3cnI4LnM=",
+      "dev": true
+    },
+    "qs": {
+      "version": "6.4.0",
+      "resolved": "https://registry.npmjs.org/qs/-/qs-6.4.0.tgz",
+      "integrity": "sha1-E+JtKK1rD/qpExLNO/cI7TUecjM=",
+      "dev": true
+    },
+    "query-string": {
+      "version": "4.3.4",
+      "resolved": "https://registry.npmjs.org/query-string/-/query-string-4.3.4.tgz",
+      "integrity": "sha1-u7aTucqRXCMlFbIosaArYJBD2+s=",
+      "dev": true,
+      "requires": {
+        "object-assign": "4.1.1",
+        "strict-uri-encode": "1.1.0"
+      }
+    },
