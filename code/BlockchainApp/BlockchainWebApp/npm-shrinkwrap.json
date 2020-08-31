@@ -6274,3 +6274,126 @@
       "dev": true
     },
     "svgo": {
+      "version": "0.7.2",
+      "resolved": "https://registry.npmjs.org/svgo/-/svgo-0.7.2.tgz",
+      "integrity": "sha1-n1dyQTlSE1xv779Ar+ak+qiLS7U=",
+      "dev": true,
+      "requires": {
+        "coa": "1.0.3",
+        "colors": "1.1.2",
+        "csso": "2.3.2",
+        "js-yaml": "3.7.0",
+        "mkdirp": "0.5.1",
+        "sax": "1.2.4",
+        "whet.extend": "0.9.9"
+      }
+    },
+    "symbol-observable": {
+      "version": "1.0.4",
+      "resolved": "https://registry.npmjs.org/symbol-observable/-/symbol-observable-1.0.4.tgz",
+      "integrity": "sha1-Kb9hXUqnEhvdiYsi1LP5vE4qoD0=",
+      "dev": true
+    },
+    "tapable": {
+      "version": "0.2.6",
+      "resolved": "https://registry.npmjs.org/tapable/-/tapable-0.2.6.tgz",
+      "integrity": "sha1-IGvo4YiGC1FEJTdebxrom/sB/Y0=",
+      "dev": true
+    },
+    "through": {
+      "version": "2.3.8",
+      "resolved": "https://registry.npmjs.org/through/-/through-2.3.8.tgz",
+      "integrity": "sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=",
+      "dev": true
+    },
+    "timers-browserify": {
+      "version": "2.0.2",
+      "resolved": "https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.2.tgz",
+      "integrity": "sha1-q0iDz1l9zVCvIRNJoA+8pWrIa4Y=",
+      "dev": true,
+      "requires": {
+        "setimmediate": "1.0.5"
+      }
+    },
+    "tmp": {
+      "version": "0.0.31",
+      "resolved": "https://registry.npmjs.org/tmp/-/tmp-0.0.31.tgz",
+      "integrity": "sha1-jzirlDjhcxXl29izZX6L+yd65Kc=",
+      "dev": true,
+      "requires": {
+        "os-tmpdir": "1.0.2"
+      }
+    },
+    "to-array": {
+      "version": "0.1.4",
+      "resolved": "https://registry.npmjs.org/to-array/-/to-array-0.1.4.tgz",
+      "integrity": "sha1-F+bBH3PdTz10zaek/zI46a2b+JA=",
+      "dev": true
+    },
+    "to-arraybuffer": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/to-arraybuffer/-/to-arraybuffer-1.0.1.tgz",
+      "integrity": "sha1-fSKbH8xjfkZsoIEYCDanqr/4P0M=",
+      "dev": true
+    },
+    "to-object-path": {
+      "version": "0.3.0",
+      "resolved": "https://registry.npmjs.org/to-object-path/-/to-object-path-0.3.0.tgz",
+      "integrity": "sha1-KXWIt7Dn4KwI4E5nL4XB9JmeF68=",
+      "dev": true,
+      "requires": {
+        "kind-of": "3.2.2"
+      },
+      "dependencies": {
+        "kind-of": {
+          "version": "3.2.2",
+          "resolved": "https://registry.npmjs.org/kind-of/-/kind-of-3.2.2.tgz",
+          "integrity": "sha1-MeohpzS6ubuw8yRm2JOupR5KPGQ=",
+          "dev": true,
+          "requires": {
+            "is-buffer": "1.1.5"
+          }
+        }
+      }
+    },
+    "to-regex": {
+      "version": "3.0.1",
+      "resolved": "https://registry.npmjs.org/to-regex/-/to-regex-3.0.1.tgz",
+      "integrity": "sha1-FTWL7kosg712N3uh3ASdDxiDeq4=",
+      "dev": true,
+      "requires": {
+        "define-property": "0.2.5",
+        "extend-shallow": "2.0.1",
+        "regex-not": "1.0.0"
+      },
+      "dependencies": {
+        "define-property": {
+          "version": "0.2.5",
+          "resolved": "https://registry.npmjs.org/define-property/-/define-property-0.2.5.tgz",
+          "integrity": "sha1-w1se+RjsPJkPmlvFe+BKrOxcgRY=",
+          "dev": true,
+          "requires": {
+            "is-descriptor": "0.1.5"
+          }
+        },
+        "is-descriptor": {
+          "version": "0.1.5",
+          "resolved": "https://registry.npmjs.org/is-descriptor/-/is-descriptor-0.1.5.tgz",
+          "integrity": "sha1-4/uLSrZfOjc3M4jhi0AdeMWMvqc=",
+          "dev": true,
+          "requires": {
+            "is-accessor-descriptor": "0.1.6",
+            "is-data-descriptor": "0.1.4",
+            "kind-of": "3.2.2",
+            "lazy-cache": "2.0.2"
+          }
+        },
+        "kind-of": {
+          "version": "3.2.2",
+          "resolved": "https://registry.npmjs.org/kind-of/-/kind-of-3.2.2.tgz",
+          "integrity": "sha1-MeohpzS6ubuw8yRm2JOupR5KPGQ=",
+          "dev": true,
+          "requires": {
+            "is-buffer": "1.1.5"
+          }
+        }
