@@ -54,3 +54,13 @@
     "style-loader": "0.18.2",
     "to-string-loader": "1.1.5",
     "typescript": "2.4.1",
+    "url-loader": "0.5.9",
+    "webpack": "2.5.1",
+    "webpack-hot-middleware": "2.18.2",
+    "webpack-merge": "4.1.0",
+    "zone.js": "0.8.12"
+  },
+  "dependencies": {
+    "@agm/core": "^1.0.0-beta.2"
+  }
+}
