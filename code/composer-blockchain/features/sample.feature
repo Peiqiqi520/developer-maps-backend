@@ -12,4 +12,8 @@
 # limitations under the License.
 #
 
-Fe
+Feature: Sample
+
+    Background:
+        Given I have deployed the business network definition ..
+        
