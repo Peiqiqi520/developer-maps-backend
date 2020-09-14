@@ -17,4 +17,6 @@ Feature: Sample
     Background:
         Given I have deployed the business network definition ..
         And I have added the following participants of type org.example.biznet.SampleParticipant
-            | p
+            | participantId   | firstName | lastName |
+            | alice@email.com | Alice     | A        |
+            | bob@email.com   | Bob  
