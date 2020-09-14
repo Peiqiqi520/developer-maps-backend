@@ -19,4 +19,6 @@ Feature: Sample
         And I have added the following participants of type org.example.biznet.SampleParticipant
             | participantId   | firstName | lastName |
             | alice@email.com | Alice     | A        |
-            | bob@email.com   | Bob  
+            | bob@email.com   | Bob       | B        |
+        And I have added the following assets of type org.example.biznet.SampleAsset
+            | 
