@@ -21,4 +21,6 @@ Feature: Sample
             | alice@email.com | Alice     | A        |
             | bob@email.com   | Bob       | B        |
         And I have added the following assets of type org.example.biznet.SampleAsset
-            | 
+            | assetId | owner           | value |
+            | 1       | alice@email.com | 10    |
+            | 2  
