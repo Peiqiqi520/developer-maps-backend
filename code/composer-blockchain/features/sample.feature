@@ -23,4 +23,5 @@ Feature: Sample
         And I have added the following assets of type org.example.biznet.SampleAsset
             | assetId | owner           | value |
             | 1       | alice@email.com | 10    |
-            | 2  
+            | 2       | bob@email.com   | 20    |
+        And I have issued the participant org.example.biznet.SampleParticipant#alice@
