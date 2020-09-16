@@ -24,4 +24,5 @@ Feature: Sample
             | assetId | owner           | value |
             | 1       | alice@email.com | 10    |
             | 2       | bob@email.com   | 20    |
-        And I have issued the participant org.example.biznet.SampleParticipant#alice@
+        And I have issued the participant org.example.biznet.SampleParticipant#alice@email.com with the identity alice1
+        And I have issued the participant org.example.biznet.SampleParticipant#bob@email.
