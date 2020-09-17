@@ -25,4 +25,7 @@ Feature: Sample
             | 1       | alice@email.com | 10    |
             | 2       | bob@email.com   | 20    |
         And I have issued the participant org.example.biznet.SampleParticipant#alice@email.com with the identity alice1
-        And I have issued the participant org.example.biznet.SampleParticipant#bob@email.
+        And I have issued the participant org.example.biznet.SampleParticipant#bob@email.com with the identity bob1
+
+    Scenario: Alice can read all of the assets
+        When I use the identity
