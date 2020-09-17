@@ -28,4 +28,6 @@ Feature: Sample
         And I have issued the participant org.example.biznet.SampleParticipant#bob@email.com with the identity bob1
 
     Scenario: Alice can read all of the assets
-        When I use the identity
+        When I use the identity alice1
+        Then I should have the following assets of type org.example.biznet.SampleAsset
+            | assetId | owner 
