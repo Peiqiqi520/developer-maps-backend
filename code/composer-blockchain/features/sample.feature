@@ -35,4 +35,6 @@ Feature: Sample
             | 2       | bob@email.com   | 20    |
 
     Scenario: Bob can read all of the assets
-        When I use th
+        When I use the identity alice1
+        Then I should have the following assets of type org.example.biznet.SampleAsset
+            | assetId |
