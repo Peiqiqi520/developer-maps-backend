@@ -37,4 +37,6 @@ Feature: Sample
     Scenario: Bob can read all of the assets
         When I use the identity alice1
         Then I should have the following assets of type org.example.biznet.SampleAsset
-            | assetId |
+            | assetId | owner           | value |
+            | 1       | alice@email.com | 10    |
+            | 2       | bob@email.c
