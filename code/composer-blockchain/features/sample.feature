@@ -39,4 +39,8 @@ Feature: Sample
         Then I should have the following assets of type org.example.biznet.SampleAsset
             | assetId | owner           | value |
             | 1       | alice@email.com | 10    |
-            | 2       | bob@email.c
+            | 2       | bob@email.com   | 20    |
+
+    Scenario: Alice can add assets that she owns
+        When I use the identity alice1
+      
