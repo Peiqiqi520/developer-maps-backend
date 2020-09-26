@@ -43,4 +43,5 @@ Feature: Sample
 
     Scenario: Alice can add assets that she owns
         When I use the identity alice1
-      
+        And I add the following asset of type org.example.biznet.SampleAsset
+            | assetId | owner           | va
