@@ -48,4 +48,8 @@ Feature: Sample
             | 3       | alice@email.com | 30    |
         Then I should have the following assets of type org.example.biznet.SampleAsset
             | assetId | owner           | value |
-            | 3       | alice@email.c
+            | 3       | alice@email.com | 30    |
+
+    Scenario: Alice cannot add assets that Bob owns
+        When I use the identity alice1
+        And I add the 
