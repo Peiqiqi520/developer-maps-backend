@@ -53,4 +53,6 @@ Feature: Sample
     Scenario: Alice cannot add assets that Bob owns
         When I use the identity alice1
         And I add the following asset of type org.example.biznet.SampleAsset
-            | assetId | owner           | valu
+            | assetId | owner           | value |
+            | 3       | bob@email.com   | 30    |
+        Then I should get an error matching /does not have .* acc
