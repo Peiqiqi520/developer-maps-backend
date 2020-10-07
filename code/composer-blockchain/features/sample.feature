@@ -55,4 +55,8 @@ Feature: Sample
         And I add the following asset of type org.example.biznet.SampleAsset
             | assetId | owner           | value |
             | 3       | bob@email.com   | 30    |
-        Then I should get an error matching /does not have .* acc
+        Then I should get an error matching /does not have .* access to resource/
+
+    Scenario: Bob can add assets that he owns
+        When I use the identity bob1
+        
