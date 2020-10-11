@@ -60,4 +60,6 @@ Feature: Sample
     Scenario: Bob can add assets that he owns
         When I use the identity bob1
         And I add the following asset of type org.example.biznet.SampleAsset
-            | assetId | owner        
+            | assetId | owner           | value |
+            | 4       | bob@email.com   | 40    |
+        Then I should have the following assets of 
