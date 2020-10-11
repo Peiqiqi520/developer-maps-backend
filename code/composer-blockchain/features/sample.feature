@@ -62,4 +62,6 @@ Feature: Sample
         And I add the following asset of type org.example.biznet.SampleAsset
             | assetId | owner           | value |
             | 4       | bob@email.com   | 40    |
-        Then I should have the following assets of 
+        Then I should have the following assets of type org.example.biznet.SampleAsset
+            | assetId | owner           | value |
+            | 4       | bob@email.com   | 40
