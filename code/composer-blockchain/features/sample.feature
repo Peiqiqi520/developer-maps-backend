@@ -68,4 +68,6 @@ Feature: Sample
 
     Scenario: Bob cannot add assets that Alice owns
         When I use the identity bob1
-        And I add the followi
+        And I add the following asset of type org.example.biznet.SampleAsset
+            | assetId | owner           | value |
+            | 4
