@@ -70,4 +70,7 @@ Feature: Sample
         When I use the identity bob1
         And I add the following asset of type org.example.biznet.SampleAsset
             | assetId | owner           | value |
-            | 4
+            | 4       | alice@email.com | 40    |
+        Then I should get an error matching /does not have .* access to resource/
+
+    Sc
