@@ -73,4 +73,6 @@ Feature: Sample
             | 4       | alice@email.com | 40    |
         Then I should get an error matching /does not have .* access to resource/
 
-    Sc
+    Scenario: Alice can update her assets
+        When I use the identity alice1
+        And I update the following asset of ty
