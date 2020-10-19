@@ -79,4 +79,7 @@ Feature: Sample
             | assetId | owner           | value |
             | 1       | alice@email.com | 50    |
         Then I should have the following assets of type org.example.biznet.SampleAsset
-          
+            | assetId | owner           | value |
+            | 1       | alice@email.com | 50    |
+
+    Scenario: Ali
