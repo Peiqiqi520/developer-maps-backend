@@ -82,4 +82,6 @@ Feature: Sample
             | assetId | owner           | value |
             | 1       | alice@email.com | 50    |
 
-    Scenario: Ali
+    Scenario: Alice cannot update Bob's assets
+        When I use the identity alice1
+        And I update the following asset o
