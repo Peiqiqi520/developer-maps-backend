@@ -84,4 +84,6 @@ Feature: Sample
 
     Scenario: Alice cannot update Bob's assets
         When I use the identity alice1
-        And I update the following asset o
+        And I update the following asset of type org.example.biznet.SampleAsset
+            | assetId | owner           | value |
+            | 2       | bob@emai
