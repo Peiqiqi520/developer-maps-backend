@@ -89,4 +89,6 @@ Feature: Sample
             | 2       | bob@email.com   | 50    |
         Then I should get an error matching /does not have .* access to resource/
 
-    Scenario: Bob can 
+    Scenario: Bob can update his assets
+        When I use the identity bob1
+        And I update the following asset of type org
