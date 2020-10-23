@@ -91,4 +91,6 @@ Feature: Sample
 
     Scenario: Bob can update his assets
         When I use the identity bob1
-        And I update the following asset of type org
+        And I update the following asset of type org.example.biznet.SampleAsset
+            | assetId | owner         | value |
+            | 2       | bob@email.com | 60   
