@@ -95,4 +95,7 @@ Feature: Sample
             | assetId | owner         | value |
             | 2       | bob@email.com | 60    |
         Then I should have the following assets of type org.example.biznet.SampleAsset
-            | assetId | own
+            | assetId | owner         | value |
+            | 2       | bob@email.com | 60    |
+
+    Scenario: Bob cannot update Alice's asse
