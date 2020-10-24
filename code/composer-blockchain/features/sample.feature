@@ -98,4 +98,6 @@ Feature: Sample
             | assetId | owner         | value |
             | 2       | bob@email.com | 60    |
 
-    Scenario: Bob cannot update Alice's asse
+    Scenario: Bob cannot update Alice's assets
+        When I use the identity bob1
+        And I update the following asset of type org.example.bizn
