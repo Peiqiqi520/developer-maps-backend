@@ -100,4 +100,6 @@ Feature: Sample
 
     Scenario: Bob cannot update Alice's assets
         When I use the identity bob1
-        And I update the following asset of type org.example.bizn
+        And I update the following asset of type org.example.biznet.SampleAsset
+            | assetId | owner           | value |
+            | 1       | alice@email.com | 60   
