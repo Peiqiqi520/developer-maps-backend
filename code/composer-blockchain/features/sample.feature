@@ -102,4 +102,8 @@ Feature: Sample
         When I use the identity bob1
         And I update the following asset of type org.example.biznet.SampleAsset
             | assetId | owner           | value |
-            | 1       | alice@email.com | 60   
+            | 1       | alice@email.com | 60    |
+        Then I should get an error matching /does not have .* access to resource/
+
+    Scenario: Alice can remove her assets
+ 
