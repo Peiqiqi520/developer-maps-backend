@@ -106,4 +106,5 @@ Feature: Sample
         Then I should get an error matching /does not have .* access to resource/
 
     Scenario: Alice can remove her assets
- 
+        When I use the identity alice1
+        And I remove the following asset of type org.example.biznet.SampleAss
