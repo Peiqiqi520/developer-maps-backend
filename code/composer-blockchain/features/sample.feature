@@ -107,4 +107,7 @@ Feature: Sample
 
     Scenario: Alice can remove her assets
         When I use the identity alice1
-        And I remove the following asset of type org.example.biznet.SampleAss
+        And I remove the following asset of type org.example.biznet.SampleAsset
+            | assetId |
+            | 1       |
+        Then I should not have the following assets of typ
