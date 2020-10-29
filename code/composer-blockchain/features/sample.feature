@@ -110,4 +110,8 @@ Feature: Sample
         And I remove the following asset of type org.example.biznet.SampleAsset
             | assetId |
             | 1       |
-        Then I should not have the following assets of typ
+        Then I should not have the following assets of type org.example.biznet.SampleAsset
+            | assetId |
+            | 1       |
+
+    Scenario: Alice c
