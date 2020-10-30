@@ -114,4 +114,6 @@ Feature: Sample
             | assetId |
             | 1       |
 
-    Scenario: Alice c
+    Scenario: Alice cannot remove Bob's assets
+        When I use the identity alice1
+        And I remove the following asset of 
