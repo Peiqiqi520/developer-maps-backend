@@ -119,4 +119,7 @@ Feature: Sample
         And I remove the following asset of type org.example.biznet.SampleAsset
             | assetId |
             | 2       |
-        Then
+        Then I should get an error matching /does not have .* access to resource/
+
+    Scenario: Bob can remove his assets
+        Wh
