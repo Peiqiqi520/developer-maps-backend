@@ -116,4 +116,7 @@ Feature: Sample
 
     Scenario: Alice cannot remove Bob's assets
         When I use the identity alice1
-        And I remove the following asset of 
+        And I remove the following asset of type org.example.biznet.SampleAsset
+            | assetId |
+            | 2       |
+        Then
