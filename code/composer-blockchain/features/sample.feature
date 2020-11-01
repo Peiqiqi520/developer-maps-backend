@@ -122,4 +122,7 @@ Feature: Sample
         Then I should get an error matching /does not have .* access to resource/
 
     Scenario: Bob can remove his assets
-        Wh
+        When I use the identity bob1
+        And I remove the following asset of type org.example.biznet.SampleAsset
+            | assetId |
+   
