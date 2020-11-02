@@ -127,4 +127,8 @@ Feature: Sample
             | assetId |
             | 2       |
         Then I should not have the following assets of type org.example.biznet.SampleAsset
-       
+            | assetId |
+            | 2       |
+
+    Scenario: Bob cannot remove Alice's assets
+        When I use the identity bob
