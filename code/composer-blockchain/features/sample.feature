@@ -125,4 +125,6 @@ Feature: Sample
         When I use the identity bob1
         And I remove the following asset of type org.example.biznet.SampleAsset
             | assetId |
-   
+            | 2       |
+        Then I should not have the following assets of type org.example.biznet.SampleAsset
+       
