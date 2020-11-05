@@ -134,4 +134,7 @@ Feature: Sample
         When I use the identity bob1
         And I remove the following asset of type org.example.biznet.SampleAsset
             | assetId |
-            | 1     
+            | 1       |
+        Then I should get an error matching /does not have .* access to resource/
+
+    Scenari
