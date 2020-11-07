@@ -137,4 +137,6 @@ Feature: Sample
             | 1       |
         Then I should get an error matching /does not have .* access to resource/
 
-    Scenari
+    Scenario: Alice can submit a transaction for her assets
+        When I use the identity alice1
+        And I submit the following transaction of typ
