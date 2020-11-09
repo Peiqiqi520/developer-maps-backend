@@ -143,4 +143,6 @@ Feature: Sample
             | asset | newValue |
             | 1     | 50       |
         Then I should have the following assets of type org.example.biznet.SampleAsset
-            | assetId | owne
+            | assetId | owner           | value |
+            | 1       | alice@email.com | 50    |
+        And I should have received the following event of typ
