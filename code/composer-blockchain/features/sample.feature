@@ -147,4 +147,8 @@ Feature: Sample
             | 1       | alice@email.com | 50    |
         And I should have received the following event of type org.example.biznet.SampleEvent
             | asset   | oldValue | newValue |
-            | 1       | 10       | 5
+            | 1       | 10       | 50       |
+
+    Scenario: Alice cannot submit a transaction for Bob's assets
+        When I use the identity alice1
+    
