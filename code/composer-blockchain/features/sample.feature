@@ -156,3 +156,6 @@ Feature: Sample
             | 2     | 50       |
         Then I should get an error matching /does not have .* access to resource/
 
+    Scenario: Bob can submit a transaction for his assets
+        When I use the identity bob1
+        And I submit the following transaction of 
