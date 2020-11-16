@@ -153,4 +153,6 @@ Feature: Sample
         When I use the identity alice1
         And I submit the following transaction of type org.example.biznet.SampleTransaction
             | asset | newValue |
-      
+            | 2     | 50       |
+        Then I should get an error matching /does not have .* access to resource/
+
