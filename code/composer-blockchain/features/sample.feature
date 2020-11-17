@@ -158,4 +158,7 @@ Feature: Sample
 
     Scenario: Bob can submit a transaction for his assets
         When I use the identity bob1
-        And I submit the following transaction of 
+        And I submit the following transaction of type org.example.biznet.SampleTransaction
+            | asset | newValue |
+            | 2     | 60       |
+        T
