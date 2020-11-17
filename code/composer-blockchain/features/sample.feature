@@ -161,4 +161,5 @@ Feature: Sample
         And I submit the following transaction of type org.example.biznet.SampleTransaction
             | asset | newValue |
             | 2     | 60       |
-        T
+        Then I should have the following assets of type org.example.biznet.SampleAsset
+            | assetId
