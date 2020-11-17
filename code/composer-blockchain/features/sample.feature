@@ -162,4 +162,6 @@ Feature: Sample
             | asset | newValue |
             | 2     | 60       |
         Then I should have the following assets of type org.example.biznet.SampleAsset
-            | assetId
+            | assetId | owner         | value |
+            | 2       | bob@email.com | 60    |
+        And I should have received 
