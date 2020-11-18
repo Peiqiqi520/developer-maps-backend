@@ -164,4 +164,6 @@ Feature: Sample
         Then I should have the following assets of type org.example.biznet.SampleAsset
             | assetId | owner         | value |
             | 2       | bob@email.com | 60    |
-        And I should have received 
+        And I should have received the following event of type org.example.biznet.SampleEvent
+            | asset   | oldValue | newValue |
+            | 2       
