@@ -166,4 +166,7 @@ Feature: Sample
             | 2       | bob@email.com | 60    |
         And I should have received the following event of type org.example.biznet.SampleEvent
             | asset   | oldValue | newValue |
-            | 2       
+            | 2       | 20       | 60       |
+
+    Scenario: Bob cannot submit a transaction for Alice's assets
+        When I use the ide
