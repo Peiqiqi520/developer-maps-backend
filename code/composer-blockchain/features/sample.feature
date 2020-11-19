@@ -171,4 +171,6 @@ Feature: Sample
     Scenario: Bob cannot submit a transaction for Alice's assets
         When I use the identity bob1
         And I submit the following transaction of type org.example.biznet.SampleTransaction
-       
+            | asset | newValue |
+            | 1     | 60       |
+        Then I should get an error matching /does 
