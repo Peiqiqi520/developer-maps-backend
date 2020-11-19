@@ -169,4 +169,6 @@ Feature: Sample
             | 2       | 20       | 60       |
 
     Scenario: Bob cannot submit a transaction for Alice's assets
-        When I use the ide
+        When I use the identity bob1
+        And I submit the following transaction of type org.example.biznet.SampleTransaction
+       
