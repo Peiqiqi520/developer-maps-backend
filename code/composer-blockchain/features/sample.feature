@@ -173,4 +173,4 @@ Feature: Sample
         And I submit the following transaction of type org.example.biznet.SampleTransaction
             | asset | newValue |
             | 1     | 60       |
-        Then I should get an error matching /does 
+        Then I should get an error matching /does not have .* access to resource/
