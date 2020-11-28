@@ -23,4 +23,6 @@ module.exports = function () {
 
 if (cucumber.defineSupportCode) {
     cucumber.defineSupportCode((context) => {
-        module.exports.call(con
+        module.exports.call(context);
+    });
+}
