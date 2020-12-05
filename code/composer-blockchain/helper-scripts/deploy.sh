@@ -2,4 +2,5 @@
 
 echo "Be sure to run the 'startFabric.sh' script first!"
 composer network install --card PeerAdmin@hlfv1 --archiveFile oracle-asset-track@0.0.8.bna
-#comp
+#composer network upgrade -c PeerAdmin@hlfv1 -n oracle-asset-track -V 0.0.8
+composer network start --networkName oracle-asset-track --net
