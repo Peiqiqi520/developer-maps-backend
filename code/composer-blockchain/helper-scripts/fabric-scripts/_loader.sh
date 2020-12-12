@@ -28,4 +28,8 @@ if [ -z ${FABRIC_START_TIMEOUT+x} ]; then
 else
 
    re='^[0-9]+$'
-   if ! [[ $FABRIC_START_TIME
+   if ! [[ $FABRIC_START_TIMEOUT =~ $re ]] ; then
+      echo "FABRIC_START_TIMEOUT: Not a number" >&2; exit 1
+   fi
+
+ echo "FABRIC_START_TIM
