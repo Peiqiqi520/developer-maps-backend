@@ -32,4 +32,7 @@ else
       echo "FABRIC_START_TIMEOUT: Not a number" >&2; exit 1
    fi
 
- echo "FABRIC_START_TIM
+ echo "FABRIC_START_TIMEOUT is set to '$FABRIC_START_TIMEOUT'"
+fi
+
+"${DIR}"/fabric-scripts/"${FABRIC_VERSION}"/"${THIS_SCRI
