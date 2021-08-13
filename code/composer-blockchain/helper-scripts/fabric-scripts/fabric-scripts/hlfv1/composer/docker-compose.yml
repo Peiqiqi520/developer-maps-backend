@@ -52,3 +52,22 @@ services:
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
     command: peer node start --peer-defaultchain=false
     ports:
+      - 7051:7051
+      - 7053:7053
+    volumes:
+        - /var/run/:/host/var/run/
+        - ./:/etc/hyperledger/configtx
+        - ./crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp:/etc/hyperledger/peer/msp
+        - ./crypto-config/peerOrganizations/org1.example.com/users:/etc/hyperledger/msp/users
+    depends_on:
+      - orderer.example.com
+      - couchdb
+
+  couchdb:
+    container_name: couchdb
+    image: hyperledger/fabric-couchdb:$ARCH-1.0.4
+    ports:
+      - 5984:5984
+    environment:
+      DB_URL: http://localhost:5984/member_db
+
