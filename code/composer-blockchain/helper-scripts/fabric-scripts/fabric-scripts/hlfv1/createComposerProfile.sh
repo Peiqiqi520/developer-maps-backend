@@ -6,4 +6,8 @@ set -ev
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 rm -rf ~/.composer-connection-profiles/hlfv1/*
-rm -rf ~/.composer-cr
+rm -rf ~/.composer-credentials/*
+
+# copy org admin credentials into the keyValStore
+mkdir -p ~/.composer-credentials
+cp "${DIR}"/compo
