@@ -10,4 +10,7 @@ rm -rf ~/.composer-credentials/*
 
 # copy org admin credentials into the keyValStore
 mkdir -p ~/.composer-credentials
-cp "${DIR}"/compo
+cp "${DIR}"/composer/creds/* ~/.composer-credentials
+
+# create a composer connection profile
+mkdir -p ~/.composer-connection-profiles/h
