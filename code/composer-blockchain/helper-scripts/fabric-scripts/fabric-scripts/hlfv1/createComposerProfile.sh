@@ -13,4 +13,9 @@ mkdir -p ~/.composer-credentials
 cp "${DIR}"/composer/creds/* ~/.composer-credentials
 
 # create a composer connection profile
-mkdir -p ~/.composer-connection-profiles/h
+mkdir -p ~/.composer-connection-profiles/hlfv1
+cat << EOF > ~/.composer-connection-profiles/hlfv1/connection.json
+{
+    "type": "hlfv1",
+    "orderers": [
+     
