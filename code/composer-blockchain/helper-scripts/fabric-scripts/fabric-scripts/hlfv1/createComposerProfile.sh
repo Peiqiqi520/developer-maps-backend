@@ -21,4 +21,9 @@ cat << EOF > ~/.composer-connection-profiles/hlfv1/connection.json
        { "url" : "grpc://localhost:7050" }
     ],
     "ca": { "url": "http://localhost:7054", 
-            "name": "ca.org1.exam
+            "name": "ca.org1.example.com"
+    },
+    "peers": [
+        {
+            "requestURL": "grpc://localhost:7051",
+            "even
