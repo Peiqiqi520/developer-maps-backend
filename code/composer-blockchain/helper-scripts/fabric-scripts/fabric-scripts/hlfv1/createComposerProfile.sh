@@ -30,4 +30,9 @@ cat << EOF > ~/.composer-connection-profiles/hlfv1/connection.json
         }
     ],
     "keyValStore": "${HOME}/.composer-credentials",
-    "channel":
+    "channel": "composerchannel",
+    "mspID": "Org1MSP",
+    "timeout": "300"
+}
+EOF
+echo "Hyperledger Composer profile has been created f
