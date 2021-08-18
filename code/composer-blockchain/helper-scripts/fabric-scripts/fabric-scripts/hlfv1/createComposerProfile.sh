@@ -26,4 +26,8 @@ cat << EOF > ~/.composer-connection-profiles/hlfv1/connection.json
     "peers": [
         {
             "requestURL": "grpc://localhost:7051",
-            "even
+            "eventURL": "grpc://localhost:7053"
+        }
+    ],
+    "keyValStore": "${HOME}/.composer-credentials",
+    "channel":
