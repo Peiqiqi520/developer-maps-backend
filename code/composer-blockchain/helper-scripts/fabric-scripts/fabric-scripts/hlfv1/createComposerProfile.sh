@@ -35,4 +35,4 @@ cat << EOF > ~/.composer-connection-profiles/hlfv1/connection.json
     "timeout": "300"
 }
 EOF
-echo "Hyperledger Composer profile has been created f
+echo "Hyperledger Composer profile has been created for the Hyperledger Fabric v1.0 instance"
