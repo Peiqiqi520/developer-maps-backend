@@ -31,3 +31,8 @@ cat << EOF > /tmp/.connection.json
     "type": "hlfv1",
     "orderers": [
        { "url" : "grpc://localhost:7050" }
+    ],
+    "ca": { "url": "http://localhost:7054", "name": "ca.org1.example.com"},
+    "peers": [
+        {
+       
