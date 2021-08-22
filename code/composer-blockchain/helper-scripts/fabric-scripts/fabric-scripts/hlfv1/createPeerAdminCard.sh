@@ -25,4 +25,9 @@ else
     exit 1
 fi
 
-cat << EOF > /t
+cat << EOF > /tmp/.connection.json
+{
+    "name": "hlfv1",
+    "type": "hlfv1",
+    "orderers": [
+       { "url" : "grpc://localhost:7050" }
