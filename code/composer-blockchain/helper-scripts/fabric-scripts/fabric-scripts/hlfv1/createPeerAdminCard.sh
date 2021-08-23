@@ -35,4 +35,8 @@ cat << EOF > /tmp/.connection.json
     "ca": { "url": "http://localhost:7054", "name": "ca.org1.example.com"},
     "peers": [
         {
-       
+            "requestURL": "grpc://localhost:7051",
+            "eventURL": "grpc://localhost:7053"
+        }
+    ],
+    "channel
