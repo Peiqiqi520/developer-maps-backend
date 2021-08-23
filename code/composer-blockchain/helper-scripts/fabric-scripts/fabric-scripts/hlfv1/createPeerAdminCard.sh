@@ -39,4 +39,10 @@ cat << EOF > /tmp/.connection.json
             "eventURL": "grpc://localhost:7053"
         }
     ],
-    "channel
+    "channel": "composerchannel",
+    "mspID": "Org1MSP",
+    "timeout": 300
+}
+EOF
+
+PRIVATE_KEY="${DIR}"/composer/crypto-config/pee
