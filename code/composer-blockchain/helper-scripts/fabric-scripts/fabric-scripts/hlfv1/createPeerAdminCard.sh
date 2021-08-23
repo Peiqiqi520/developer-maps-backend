@@ -45,4 +45,4 @@ cat << EOF > /tmp/.connection.json
 }
 EOF
 
-PRIVATE_KEY="${DIR}"/composer/crypto-config/pee
+PRIVATE_KEY="${DIR}"/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/114aab0e76bf0c78308f89efc4b8c9423e31568da0c340ca187a
