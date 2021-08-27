@@ -52,4 +52,8 @@ if "${HL_COMPOSER_CLI}" card list -n PeerAdmin@hlfv1 > /dev/null; then
     "${HL_COMPOSER_CLI}" card delete -n PeerAdmin@hlfv1
 fi
 "${HL_COMPOSER_CLI}" card create -p /tmp/.connection.json -u PeerAdmin -c "${CERT}" -k "${PRIVATE_KEY}" -r PeerAdmin -r ChannelAdmin --file /tmp/PeerAdmin@hlfv1.card
-"${HL_COMPOSER_CLI}
+"${HL_COMPOSER_CLI}" card import --file /tmp/PeerAdmin@hlfv1.card 
+
+rm -rf /tmp/.connection.json
+
+echo "Hyperledger Composer PeerAdmin c
