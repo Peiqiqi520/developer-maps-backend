@@ -56,4 +56,6 @@ fi
 
 rm -rf /tmp/.connection.json
 
-echo "Hyperledger Composer PeerAdmin c
+echo "Hyperledger Composer PeerAdmin card has been imported"
+"${HL_COMPOSER_CLI}" card list
+
