@@ -7,4 +7,6 @@ set -ev
 ARCH=`uname -m`
 
 # Grab the current directorydirectory.
-D
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# Shut down the Docker containers that might be
