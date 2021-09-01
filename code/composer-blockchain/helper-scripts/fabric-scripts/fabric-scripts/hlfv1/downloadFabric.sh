@@ -13,4 +13,5 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 docker pull hyperledger/fabric-peer:$ARCH-1.0.4
 docker pull hyperledger/fabric-ca:$ARCH-1.0.4
 docker pull hyperledger/fabric-ccenv:$ARCH-1.0.4
-docker pull hyperledger/fab
+docker pull hyperledger/fabric-orderer:$ARCH-1.0.4
+docker pull hyperledger/fabric-couchdb:$ARCH-1.0.4
