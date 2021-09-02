@@ -7,4 +7,7 @@ set -ev
 ARCH=`uname -m`
 
 # Grab the current directory.
-DIR="$
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# Shut down the Docker containers for the system tests.
+cd 
