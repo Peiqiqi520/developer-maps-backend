@@ -13,4 +13,9 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd "${DIR}"/composer
 ARCH=$ARCH docker-compose -f docker-compose.yml kill && docker-compose -f docker-compose.yml down
 
-# remove the 
+# remove the local state
+#rm -fr ~/.composer
+#rm -rf ~/.composer-connection-profiles/hlfv1
+#rm -f ~/.composer-credentials/*
+
+# remove cha
