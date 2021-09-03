@@ -18,4 +18,7 @@ ARCH=$ARCH docker-compose -f docker-compose.yml kill && docker-compose -f docker
 #rm -rf ~/.composer-connection-profiles/hlfv1
 #rm -f ~/.composer-credentials/*
 
-# remove cha
+# remove chaincode docker images
+# docker rmi $(docker images dev-* -q)
+
+# Your system is now clean
