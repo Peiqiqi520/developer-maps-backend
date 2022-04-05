@@ -33,4 +33,8 @@ services:
         - ./crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp:/etc/hyperledger/msp/orderer/msp
 
   peer0.org1.example.com:
-    container_name: peer0.org1.
+    container_name: peer0.org1.example.com
+    image: hyperledger/fabric-peer:$ARCH-1.1.0
+    environment:
+      - CORE_LOGGING_LEVEL=debug
+      - CORE_
