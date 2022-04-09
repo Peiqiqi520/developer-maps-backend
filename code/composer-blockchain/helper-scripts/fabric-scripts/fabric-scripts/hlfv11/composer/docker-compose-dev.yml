@@ -37,4 +37,6 @@ services:
     image: hyperledger/fabric-peer:$ARCH-1.1.0
     environment:
       - CORE_LOGGING_LEVEL=debug
-      - CORE_
+      - CORE_CHAINCODE_LOGGING_LEVEL=DEBUG
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      - CORE_PEER_ID=peer0.org
