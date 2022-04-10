@@ -53,4 +53,6 @@ services:
       - 7052:7052
       - 7053:7053
     volumes:
-        - /var/run/:/host/var/ru
+        - /var/run/:/host/var/run/
+        - ./:/etc/hyperledger/configtx
+        - ./crypto-config/peerOrganizations/org1.example.com/peers
