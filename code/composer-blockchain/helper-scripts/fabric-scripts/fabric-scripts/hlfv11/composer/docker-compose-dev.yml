@@ -62,4 +62,9 @@ services:
       - couchdb
 
   couchdb:
-    container
+    container_name: couchdb
+    image: hyperledger/fabric-couchdb:$ARCH-0.4.6
+    ports:
+      - 5984:5984
+    environment:
+      DB_URL: http:/
