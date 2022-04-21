@@ -67,4 +67,6 @@ services:
     ports:
       - 5984:5984
     environment:
-      DB_URL: http:/
+      DB_URL: http://localhost:5984/member_db
+
+
