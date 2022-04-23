@@ -2,4 +2,7 @@ version: '2'
 
 services:
   ca.org1.example.com:
-    image: hyperledger
+    image: hyperledger/fabric-ca:$ARCH-1.1.0
+    environment:
+      - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+      - FABRIC_CA_SER
