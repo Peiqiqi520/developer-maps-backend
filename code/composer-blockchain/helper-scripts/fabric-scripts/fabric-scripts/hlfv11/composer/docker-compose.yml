@@ -19,4 +19,6 @@ services:
     image: hyperledger/fabric-orderer:$ARCH-1.1.0
     environment:
       - ORDERER_GENERAL_LOGLEVEL=debug
-      - ORDERER_GENERAL_LISTENADDR
+      - ORDERER_GENERAL_LISTENADDRESS=0.0.0.0
+      - ORDERER_GENERAL_GENESISMETHOD=file
+      - ORDERER_GENERAL_GENESISFILE=/etc/hyperledger/configtx/composer-gene
