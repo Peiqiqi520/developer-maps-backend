@@ -28,4 +28,6 @@ services:
     command: orderer
     ports:
       - 7050:7050
-    volum
+    volumes:
+        - ./:/etc/hyperledger/configtx
+        - ./crypto-config/ordererOrganizations/example.com/orderers
