@@ -53,4 +53,5 @@ services:
       - 7053:7053
     volumes:
         - /var/run/:/host/var/run/
-        - ./:/etc/hyperl
+        - ./:/etc/hyperledger/configtx
+        - ./crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp:/etc
