@@ -55,4 +55,11 @@ services:
         - /var/run/:/host/var/run/
         - ./:/etc/hyperledger/configtx
         - ./crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp:/etc/hyperledger/peer/msp
-        - ./crypto-config/peerOrganizations/org1.example.com/users:/etc/hyperledger/msp/u
+        - ./crypto-config/peerOrganizations/org1.example.com/users:/etc/hyperledger/msp/users
+    depends_on:
+      - orderer.example.com
+      - couchdb
+
+  couchdb:
+    container_name: couchdb
+    image
