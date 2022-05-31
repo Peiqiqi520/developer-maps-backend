@@ -1,3 +1,4 @@
 cryptogen generate --config=./crypto-config.yaml
 export FABRIC_CFG_PATH=$PWD
-configtxgen -profile C
+configtxgen -profile ComposerOrdererGenesis -outputBlock ./composer-genesis.block
+configtxgen -profile ComposerChanne
