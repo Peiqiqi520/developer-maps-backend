@@ -10,4 +10,6 @@ ARCH=`uname -m`
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Pull and tag the latest Hyperledger Fabric base image.
-docker pull hyperledger/fabri
+docker pull hyperledger/fabric-peer:$ARCH-1.1.0
+docker pull hyperledger/fabric-ca:$ARCH-1.1.0
+docker pull hyperledger/fabric-ccenv:$ARCH-
