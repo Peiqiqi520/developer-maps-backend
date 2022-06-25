@@ -17,4 +17,10 @@ if [ "${P2}" != "" ]; then
 fi
 }
 
-# Function to remove the image
+# Function to remove the images as well
+function remove()
+{
+P=$(docker images -aq)
+if [ "${P}" != "" ]; then
+  echo "Removing images"  &2> /dev/null
+  docker rmi ${P
