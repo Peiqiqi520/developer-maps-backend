@@ -11,4 +11,10 @@ if [ "${P1}" != "" ]; then
 fi
 
 P2=$(docker ps -aq)
-if [ "${P2}" 
+if [ "${P2}" != "" ]; then
+  echo "Removing all containers"  &2> /dev/null
+  docker rm ${P2} -f
+fi
+}
+
+# Function to remove the image
