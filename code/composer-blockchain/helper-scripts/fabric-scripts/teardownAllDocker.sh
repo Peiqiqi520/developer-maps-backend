@@ -23,4 +23,9 @@ function remove()
 P=$(docker images -aq)
 if [ "${P}" != "" ]; then
   echo "Removing images"  &2> /dev/null
-  docker rmi ${P
+  docker rmi ${P} -f
+fi
+}
+
+echo "For all Docker containers or images (not just Hyperledger Fabric and Composer)"
+echo "1 - Kill a
