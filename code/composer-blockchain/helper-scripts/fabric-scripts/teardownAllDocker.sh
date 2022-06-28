@@ -33,4 +33,8 @@ echo "2 - Kill and remove the containers and remove all the downloaded images"
 echo "3 - Quit and not do anything"
 echo
 PS3="Please select which option > "
-options=("Kill & Remove" "Remove Images
+options=("Kill & Remove" "Remove Images" "Quit")
+select yn in "${options[@]}"; do
+    case $yn in
+        "Kill & Remove" ) stop;  break;;
+        "
