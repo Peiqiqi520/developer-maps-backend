@@ -37,4 +37,7 @@ options=("Kill & Remove" "Remove Images" "Quit")
 select yn in "${options[@]}"; do
     case $yn in
         "Kill & Remove" ) stop;  break;;
-        "
+        "Remove Images" ) stop;  remove; break;;
+        "Quit" ) exit;;
+    esac
+done
