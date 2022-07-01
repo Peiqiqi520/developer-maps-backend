@@ -1,4 +1,4 @@
 #!/bin/bash
 
 composer card import --file networkadmin.carde
-comp
+composer network ping --card admin@tutorial-network
