@@ -4,4 +4,10 @@
 
 namespace org.example.biznet
 
-asset Package identified b
+asset Package identified by PackageId {
+    o String PackageId
+    o Boolean active
+    o DateTime created
+    --> Trader handler
+    --> Trader sender
+    -->
