@@ -79,3 +79,28 @@ async function unboxPackage(request) {
     
     // Update all properties to new owner
     let propRegistry = await getAssetRegistry('org.example.biznet.Property');
+    for(let i = 0; i < pack.contents.length; i++) {
+        let prop = pack.contents[i];
+        prop.owner = request.recipient;
+        await propRegistry.update(prop);
+    }
+}
+/**
+ * Track the trade of a commodity from one trader to another
+ * @param {org.example.biznet.NewTransfer} request - the trade to be processed
+ * @transaction
+ */
+async function newTransfer(request) {
+    // Update handler in package
+    let packRegistry = await getAssetRegistry('org.example.biznet.Package');
+    let pack = request.package;
+
+    if(request.ingress) {
+        pack.handler = transfer.Handler;
+    }
+    else {
+        let traderRegistry = await getParticipantRegistry('org.example.biznet.Trader');
+        pack.handler = await traderRegistry.get('TRADERNULL');
+    }
+    await packRegistry.update(pack);
+}
