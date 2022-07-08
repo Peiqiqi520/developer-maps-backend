@@ -10,4 +10,10 @@ asset Package identified by PackageId {
     o DateTime created
     --> Trader handler
     --> Trader sender
-    -->
+    --> Trader recipient
+    --> Property[] contents
+}
+
+asset Property identified by PropertyId {
+    o String PropertyId
+    o String
