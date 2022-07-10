@@ -44,4 +44,11 @@ transaction Transfer {
 
 transaction NewTransfer {
     --> Package package
-    --> Trader h
+    --> Trader handler
+    o Boolean ingress
+    o Double longitude
+    o Double latitude
+}
+
+transaction CreatePackage {
+    --> Tr
