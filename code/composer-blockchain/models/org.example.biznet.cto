@@ -23,4 +23,10 @@ asset Property identified by PropertyId {
 participant Trader identified by traderId {
     o String traderId
     o String firstName
-    o 
+    o String lastName
+}
+
+transaction Trade {
+    --> Property property
+    --> Trader origOwner
+    --> Trader new
