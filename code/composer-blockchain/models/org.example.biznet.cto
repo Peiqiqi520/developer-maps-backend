@@ -29,4 +29,11 @@ participant Trader identified by traderId {
 transaction Trade {
     --> Property property
     --> Trader origOwner
-    --> Trader new
+    --> Trader newOwner
+    o Double longitude
+    o Double latitude
+}
+
+transaction Transfer {
+    --> Package package
+    --> Trader origHand
