@@ -16,4 +16,11 @@ asset Package identified by PackageId {
 
 asset Property identified by PropertyId {
     o String PropertyId
-    o String
+    o String description
+    --> Trader owner
+}
+
+participant Trader identified by traderId {
+    o String traderId
+    o String firstName
+    o 
