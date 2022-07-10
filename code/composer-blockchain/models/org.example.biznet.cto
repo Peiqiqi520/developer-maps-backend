@@ -36,4 +36,12 @@ transaction Trade {
 
 transaction Transfer {
     --> Package package
-    --> Trader origHand
+    --> Trader origHandler
+    --> Trader newHandler
+    o Double longitude
+    o Double latitude
+}
+
+transaction NewTransfer {
+    --> Package package
+    --> Trader h
