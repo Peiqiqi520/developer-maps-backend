@@ -51,4 +51,10 @@ transaction NewTransfer {
 }
 
 transaction CreatePackage {
-    --> Tr
+    --> Trader sender
+    --> Trader recipient
+    --> Property[] contents
+    o String packageId
+}
+
+transaction Un
