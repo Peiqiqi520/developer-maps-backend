@@ -3,4 +3,5 @@
   "version": "0.0.8",
   "version": "0.0.1",
   "description": "Track assets in a USPS type system",
-  "scrip
+  "scripts": {
+    "prepublish": "mkdirp ./dist && composer archive create --sourceType dir --sourceName . -a ./dist/oracle-asset-track.
