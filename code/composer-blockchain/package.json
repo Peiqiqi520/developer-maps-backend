@@ -24,4 +24,7 @@
     "cucumber": "^2.2.0",
     "eslint": "latest",
     "nyc": "latest",
-    "mkdirp": "late
+    "mkdirp": "latest",
+    "mocha": "latest"
+  }
+}
