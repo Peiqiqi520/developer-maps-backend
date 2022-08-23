@@ -20,4 +20,8 @@
     "composer-connector-embedded": "^0.19.0",
     "composer-cucumber-steps": "^0.19.0",
     "chai": "latest",
-   
+    "chai-as-promised": "latest",
+    "cucumber": "^2.2.0",
+    "eslint": "latest",
+    "nyc": "latest",
+    "mkdirp": "late
