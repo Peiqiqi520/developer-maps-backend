@@ -10,4 +10,7 @@ rule EverybodyCanReadEverything {
 }
 
 rule EverybodyCanSubmitTrades {
-    description: "Allow a
+    description: "Allow all participants to submit transactions"
+    participant: "org.example.biznet.Trader"
+    operation: CREATE
+ 
