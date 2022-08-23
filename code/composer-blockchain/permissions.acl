@@ -2,4 +2,7 @@
  * Sample access control list.
  */
 rule EverybodyCanReadEverything {
-    description: "Allow all
+    description: "Allow all participants read access to all resources"
+    participant: "org.example.biznet.Trader"
+    operation: READ
+    resourc
