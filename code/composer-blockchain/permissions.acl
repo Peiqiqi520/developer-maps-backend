@@ -21,4 +21,9 @@ rule EverybodyCanSubmitTransfers {
     description: "Allow all participants to submit transactions"
     participant: "org.example.biznet.Trader"
     operation: CREATE
-    resource: "
+    resource: "org.example.biznet.Transfer"
+    action: ALLOW
+}
+
+rule OwnerHasFullAccessToTheirAssets {
+    descri
