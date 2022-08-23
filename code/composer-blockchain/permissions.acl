@@ -26,4 +26,6 @@ rule EverybodyCanSubmitTransfers {
 }
 
 rule OwnerHasFullAccessToTheirAssets {
-    descri
+    description: "Allow all participants full access to their assets"
+    participant(p): "org.example.biznet.Trader"
+    
