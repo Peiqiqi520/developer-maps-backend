@@ -30,4 +30,10 @@ rule OwnerHasFullAccessToTheirAssets {
     participant(p): "org.example.biznet.Trader"
     operation: ALL
     resource(r): "org.example.biznet.Property"
-    condition: (r.owner.getIdentifier() === p.getIdentifie
+    condition: (r.owner.getIdentifier() === p.getIdentifier())
+    action: ALLOW
+}
+
+rule SystemACL {
+  description:  "System ACL to permit all access"
+  participant: "org.hyperledger.com
