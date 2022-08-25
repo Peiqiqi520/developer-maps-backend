@@ -52,3 +52,6 @@ rule NetworkAdminUser {
 
 rule NetworkAdminSystem {
     description: "Grant business network administrators full access to system resources"
+    participant: "org.hyperledger.composer.system.NetworkAdmin"
+    operation: ALL
+    resource: "org.hyperledger.composer.system.
