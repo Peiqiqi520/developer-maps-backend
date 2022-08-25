@@ -28,4 +28,6 @@ rule EverybodyCanSubmitTransfers {
 rule OwnerHasFullAccessToTheirAssets {
     description: "Allow all participants full access to their assets"
     participant(p): "org.example.biznet.Trader"
-    
+    operation: ALL
+    resource(r): "org.example.biznet.Property"
+    condition: (r.owner.getIdentifier() === p.getIdentifie
