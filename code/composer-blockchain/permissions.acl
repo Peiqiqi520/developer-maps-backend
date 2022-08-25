@@ -42,4 +42,6 @@ rule SystemACL {
   action: ALLOW
 }
 
-ru
+rule NetworkAdminUser {
+    description: "Grant business network administrators full access to user resources"
+    pa
