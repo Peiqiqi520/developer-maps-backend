@@ -1,4 +1,9 @@
 query MyProperties{
   description: "Select all assets owned by a certain individual"
   statement:
-   
+      SELECT org.example.biznet.Property
+          WHERE (owner == _$ownerParam)
+}
+
+query PropertyHistory {
+  description:
