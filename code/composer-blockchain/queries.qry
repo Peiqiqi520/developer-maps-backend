@@ -1,0 +1,4 @@
+query MyProperties{
+  description: "Select all assets owned by a certain individual"
+  statement:
+   
