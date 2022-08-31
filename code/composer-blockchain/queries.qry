@@ -9,4 +9,9 @@ query PropertyHistory {
   description: "Get an asset's location history"
   statement: 
       SELECT org.example.biznet.Trade
-          WHERE (property == _$propId AN
+          WHERE (property == _$propId AND timestamp > '0000-01-01T00:00:00.000Z')
+	      ORDER BY timestamp DESC
+}
+
+query OrderedTransactions {
+  description: "Get
