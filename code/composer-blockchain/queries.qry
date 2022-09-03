@@ -29,4 +29,7 @@ query GetPackagesOfProperty {
 }
 
 query GetTransfersOfPackage {
-  description: "Get transfers of a p
+  description: "Get transfers of a package"
+  statement: 
+      SELECT org.example.biznet.Transfer
+          WHERE (package == _$packageId AND timestamp > '00
