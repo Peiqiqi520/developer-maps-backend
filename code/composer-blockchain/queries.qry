@@ -25,4 +25,8 @@ query GetPackagesOfProperty {
   description: "Get all Packages that a property has been in"
   statement:
       SELECT org.example.biznet.Package
-	  WHERE (contents
+	  WHERE (contents CONTAINS _$propId)
+}
+
+query GetTransfersOfPackage {
+  description: "Get transfers of a p
