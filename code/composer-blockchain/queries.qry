@@ -14,4 +14,7 @@ query PropertyHistory {
 }
 
 query OrderedTransactions {
-  description: "Get
+  description: "Get all transactions in order by timestamp"
+  statement: 
+      SELECT org.example.biznet.Trade
+	WHER
