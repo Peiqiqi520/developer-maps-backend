@@ -37,4 +37,7 @@ query GetTransfersOfPackage {
 }
 
 query MyActivePackages {
-  description: "Get active packa
+  description: "Get active packages"
+  statement: 
+      SELECT org.example.biznet.Package
+          WHERE (active == true AND handler == _$owner
