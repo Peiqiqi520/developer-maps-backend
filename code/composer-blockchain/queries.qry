@@ -17,4 +17,9 @@ query OrderedTransactions {
   description: "Get all transactions in order by timestamp"
   statement: 
       SELECT org.example.biznet.Trade
-	WHER
+	WHERE (timestamp > '0000-01-01T00:00:00.000Z')
+	  ORDER BY timestamp DESC
+}
+
+query GetPackagesOfProperty {
+  description: "Get al
