@@ -32,4 +32,9 @@ query GetTransfersOfPackage {
   description: "Get transfers of a package"
   statement: 
       SELECT org.example.biznet.Transfer
-          WHERE (package == _$packageId AND timestamp > '00
+          WHERE (package == _$packageId AND timestamp > '0000-01-01T00:00:00.000Z')
+              ORDER BY timestamp ASC
+}
+
+query MyActivePackages {
+  description: "Get active packa
