@@ -428,3 +428,34 @@ describe('#' + namespace, () => {
         transaction.asset = factory.newRelationship(namespace, assetType, '2');
         transaction.newValue = '60';
         await businessNetworkConnection.submitTransaction(transaction);
+
+        // Get the asset.
+        const assetRegistry = await businessNetworkConnection.getAssetRegistry(assetNS);
+        const asset2 = await assetRegistry.get('2');
+
+        // Validate the asset.
+        asset2.owner.getFullyQualifiedIdentifier().should.equal(participantNS + '#bob@email.com');
+        asset2.value.should.equal('60');
+
+        // Validate the events.
+        events.should.have.lengthOf(1);
+        const event = events[0];
+        event.eventId.should.be.a('string');
+        event.timestamp.should.be.an.instanceOf(Date);
+        event.asset.getFullyQualifiedIdentifier().should.equal(assetNS + '#2');
+        event.oldValue.should.equal('20');
+        event.newValue.should.equal('60');
+    });
+
+    it('Bob cannot submit a transaction for Alice\'s assets', async () => {
+        // Use the identity for Bob.
+        await useIdentity(bobCardName);
+
+        // Submit the transaction.
+        const transaction = factory.newTransaction(namespace, 'SampleTransaction');
+        transaction.asset = factory.newRelationship(namespace, assetType, '1');
+        transaction.newValue = '60';
+        businessNetworkConnection.submitTransaction(transaction).should.be.rejectedWith(/does not have .* access to resource/);
+    });
+
+});

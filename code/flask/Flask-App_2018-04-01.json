@@ -1,0 +1,88 @@
+
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-04-01T07:00:12.020Z",
+	"__export_source": "insomnia.desktop.app:v5.14.9",
+	"resources": [
+		{
+			"_id": "wrk_64efd2a4debd4b778fe539e5119339ac",
+			"created": 1522205809566,
+			"description": "",
+			"modified": 1522205809566,
+			"name": "Flask App",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_ba57458522d9465e929c568ff3cf40a6",
+			"color": null,
+			"created": 1522205809608,
+			"data": {},
+			"isPrivate": false,
+			"modified": 1522205809608,
+			"name": "New Environment",
+			"parentId": "wrk_64efd2a4debd4b778fe539e5119339ac",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_6669eefed2f74f3480f08ad811eb5bd3",
+			"cookies": [],
+			"created": 1522205809618,
+			"modified": 1522205809618,
+			"name": "Default Jar",
+			"parentId": "wrk_64efd2a4debd4b778fe539e5119339ac",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_e6e64b3dd8a04febaed4cc11e4e7e346",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"username\": \"Tester\",\n    \"password\": \"test\",\n\t\t\"firstName\":\"John\",\n\t\t\"lastName\":\"Smith\"\n}"
+			},
+			"created": 1522205839205,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_ba298448142a482bbac61ecec727fe4c",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"metaSortKey": -1522205839205,
+			"method": "POST",
+			"modified": 1522565892274,
+			"name": "Registration",
+			"parameters": [],
+			"parentId": "wrk_64efd2a4debd4b778fe539e5119339ac",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:5000/registration",
+			"_type": "request"
+		},
+		{
+			"_id": "req_b432613cefda4ba6b67945ecb099d7d7",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"username\":\"Sdk\",\n\t\"password\": \"test\"\n}"
+			},
+			"created": 1522205844072,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_a09c1941d74d44f2be23aa14e1c3e03e",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"metaSortKey": -1522205844072,
+			"method": "POST",
+			"modified": 1522206332172,
+			"name": "Login",
+			"parameters": [],
+			"parentId": "wrk_64efd2a4debd4b778fe539e5119339ac",
+			"settingDisableRenderRequestBody": false,
