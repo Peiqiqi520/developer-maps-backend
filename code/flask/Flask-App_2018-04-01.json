@@ -86,3 +86,77 @@
 			"parameters": [],
 			"parentId": "wrk_64efd2a4debd4b778fe539e5119339ac",
 			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:5000/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_afc68b6ed7ee4ec79f08e73d626e6656",
+			"authentication": {},
+			"body": {},
+			"created": 1522205864868,
+			"description": "",
+			"headers": [],
+			"metaSortKey": -1522205864868,
+			"method": "POST",
+			"modified": 1522205930670,
+			"name": "Logout/access",
+			"parameters": [],
+			"parentId": "wrk_64efd2a4debd4b778fe539e5119339ac",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:5000/logout/access",
+			"_type": "request"
+		},
+		{
+			"_id": "req_bc666349c6d541ef9409e14682e902c5",
+			"authentication": {},
+			"body": {},
+			"created": 1522205873619,
+			"description": "",
+			"headers": [],
+			"metaSortKey": -1522205873619,
+			"method": "POST",
+			"modified": 1522205935220,
+			"name": "Logout/Refresh",
+			"parameters": [],
+			"parentId": "wrk_64efd2a4debd4b778fe539e5119339ac",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:5000/logout/refresh",
+			"_type": "request"
+		},
+		{
+			"_id": "req_65bc944a54814932b6598660955f0e6e",
+			"authentication": {},
+			"body": {},
+			"created": 1522205900598,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_c4a3b671f55b42a999639ef4577ed41f",
+					"name": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1MjIyMDU1MzEsIm5iZiI6MTUyMjIwNTUzMSwianRpIjoiYzgwMzZkZDItMWI4ZC00YTYwLWIwOGItZDgzYTc2ZTkxZDY2IiwiZXhwIjoxNTIyMjA2NDMxLCJpZGVudGl0eSI6IlRSQURFUjEiLCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MifQ.Nb8yXIR7VqmORnQDprMhP_-hNsTblNxBdMmtxQ173dU"
+				}
+			],
+			"metaSortKey": -1522205900598,
+			"method": "GET",
+			"modified": 1522206036736,
+			"name": "getCurrentAsset",
+			"parameters": [],
+			"parentId": "wrk_64efd2a4debd4b778fe539e5119339ac",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:5000/secret",
+			"_type": "request"
+		}
+	]
+}
