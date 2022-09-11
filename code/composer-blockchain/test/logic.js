@@ -314,3 +314,117 @@ describe('#' + namespace, () => {
         let asset2 = factory.newResource(namespace, assetType, '2');
         asset2.owner = factory.newRelationship(namespace, participantType, 'bob@email.com');
         asset2.value = '60';
+
+        // Update the asset, then get the asset.
+        const assetRegistry = await businessNetworkConnection.getAssetRegistry(assetNS);
+        await assetRegistry.update(asset2);
+
+        // Validate the asset.
+        asset2 = await assetRegistry.get('2');
+        asset2.owner.getFullyQualifiedIdentifier().should.equal(participantNS + '#bob@email.com');
+        asset2.value.should.equal('60');
+    });
+
+    it('Bob cannot update Alice\'s assets', async () => {
+        // Use the identity for Bob.
+        await useIdentity(bobCardName);
+
+        // Create the asset.
+        const asset1 = factory.newResource(namespace, assetType, '1');
+        asset1.owner = factory.newRelationship(namespace, participantType, 'alice@email.com');
+        asset1.value = '60';
+
+        // Update the asset, then get the asset.
+        const assetRegistry = await businessNetworkConnection.getAssetRegistry(assetNS);
+        assetRegistry.update(asset1).should.be.rejectedWith(/does not have .* access to resource/);
+
+    });
+
+    it('Alice can remove her assets', async () => {
+        // Use the identity for Alice.
+        await useIdentity(aliceCardName);
+
+        // Remove the asset, then test the asset exists.
+        const assetRegistry = await businessNetworkConnection.getAssetRegistry(assetNS);
+        await assetRegistry.remove('1');
+        const exists = await assetRegistry.exists('1');
+        exists.should.be.false;
+    });
+
+    it('Alice cannot remove Bob\'s assets', async () => {
+        // Use the identity for Alice.
+        await useIdentity(aliceCardName);
+
+        // Remove the asset, then test the asset exists.
+        const assetRegistry = await businessNetworkConnection.getAssetRegistry(assetNS);
+        assetRegistry.remove('2').should.be.rejectedWith(/does not have .* access to resource/);
+    });
+
+    it('Bob can remove his assets', async () => {
+        // Use the identity for Bob.
+        await useIdentity(bobCardName);
+
+        // Remove the asset, then test the asset exists.
+        const assetRegistry = await businessNetworkConnection.getAssetRegistry(assetNS);
+        await assetRegistry.remove('2');
+        const exists = await assetRegistry.exists('2');
+        exists.should.be.false;
+    });
+
+    it('Bob cannot remove Alice\'s assets', async () => {
+        // Use the identity for Bob.
+        await useIdentity(bobCardName);
+
+        // Remove the asset, then test the asset exists.
+        const assetRegistry = await businessNetworkConnection.getAssetRegistry(assetNS);
+        assetRegistry.remove('1').should.be.rejectedWith(/does not have .* access to resource/);
+    });
+
+    it('Alice can submit a transaction for her assets', async () => {
+        // Use the identity for Alice.
+        await useIdentity(aliceCardName);
+
+        // Submit the transaction.
+        const transaction = factory.newTransaction(namespace, 'SampleTransaction');
+        transaction.asset = factory.newRelationship(namespace, assetType, '1');
+        transaction.newValue = '50';
+        await businessNetworkConnection.submitTransaction(transaction);
+
+        // Get the asset.
+        const assetRegistry = await businessNetworkConnection.getAssetRegistry(assetNS);
+        const asset1 = await assetRegistry.get('1');
+
+        // Validate the asset.
+        asset1.owner.getFullyQualifiedIdentifier().should.equal(participantNS + '#alice@email.com');
+        asset1.value.should.equal('50');
+
+        // Validate the events.
+        events.should.have.lengthOf(1);
+        const event = events[0];
+        event.eventId.should.be.a('string');
+        event.timestamp.should.be.an.instanceOf(Date);
+        event.asset.getFullyQualifiedIdentifier().should.equal(assetNS + '#1');
+        event.oldValue.should.equal('10');
+        event.newValue.should.equal('50');
+    });
+
+    it('Alice cannot submit a transaction for Bob\'s assets', async () => {
+        // Use the identity for Alice.
+        await useIdentity(aliceCardName);
+
+        // Submit the transaction.
+        const transaction = factory.newTransaction(namespace, 'SampleTransaction');
+        transaction.asset = factory.newRelationship(namespace, assetType, '2');
+        transaction.newValue = '50';
+        businessNetworkConnection.submitTransaction(transaction).should.be.rejectedWith(/does not have .* access to resource/);
+    });
+
+    it('Bob can submit a transaction for his assets', async () => {
+        // Use the identity for Bob.
+        await useIdentity(bobCardName);
+
+        // Submit the transaction.
+        const transaction = factory.newTransaction(namespace, 'SampleTransaction');
+        transaction.asset = factory.newRelationship(namespace, assetType, '2');
+        transaction.newValue = '60';
+        await businessNetworkConnection.submitTransaction(transaction);
