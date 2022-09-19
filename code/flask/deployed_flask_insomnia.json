@@ -17,4 +17,8 @@
 			"_id": "env_064c02af58ce4d37b7dad7d963336cd4",
 			"color": null,
 			"created": 1523488562836,
-			"d
+			"data": {},
+			"isPrivate": false,
+			"modified": 1523488562836,
+			"name": "New Environment",
+			"parentId": "wrk_350b4223
