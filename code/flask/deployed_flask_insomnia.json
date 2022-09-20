@@ -25,4 +25,9 @@
 			"_type": "environment"
 		},
 		{
-			"_id": "jar_d2b57052d6e7473aa1cecb586f5473a9"
+			"_id": "jar_d2b57052d6e7473aa1cecb586f5473a9",
+			"cookies": [],
+			"created": 1523488562844,
+			"modified": 1523488562844,
+			"name": "Default Jar",
+			"parentId": "wrk_350b422392eb4f
