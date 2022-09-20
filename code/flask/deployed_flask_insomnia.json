@@ -21,4 +21,8 @@
 			"isPrivate": false,
 			"modified": 1523488562836,
 			"name": "New Environment",
-			"parentId": "wrk_350b4223
+			"parentId": "wrk_350b422392eb4f699be33d278a805cdf",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_d2b57052d6e7473aa1cecb586f5473a9"
