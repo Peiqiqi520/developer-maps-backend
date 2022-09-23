@@ -30,4 +30,8 @@
 			"created": 1523488562844,
 			"modified": 1523488562844,
 			"name": "Default Jar",
-			"parentId": "wrk_350b422392eb4f
+			"parentId": "wrk_350b422392eb4f699be33d278a805cdf",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_d7d5b91b4ed94790ab6f499d33d
