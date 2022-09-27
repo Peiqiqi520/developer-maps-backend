@@ -38,4 +38,4 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n   
+				"text": "{\n    \"username\": \"trial\",\n    \"password\": \"test\",\n\t\t\"firstName\":\"John\",\n\t\t\"lastName\":\"Smith\"\n
