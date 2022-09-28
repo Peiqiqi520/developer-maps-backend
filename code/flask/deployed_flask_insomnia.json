@@ -44,4 +44,9 @@
 			"description": "",
 			"headers": [
 				{
-					"id": "pair_ba298448
+					"id": "pair_ba298448142a482bbac61ecec727fe4c",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPriva
