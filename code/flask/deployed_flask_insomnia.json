@@ -56,4 +56,8 @@
 			"name": "Registration",
 			"parameters": [],
 			"parentId": "wrk_350b422392eb4f699be33d278a805cdf",
-			"settingDisableRenderRequestBody": fals
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": t
