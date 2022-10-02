@@ -60,4 +60,9 @@
 			"settingEncodeUrl": true,
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
-			"settingStoreCookies": t
+			"settingStoreCookies": true,
+			"url": "129.213.87.202:5000/registration",
+			"_type": "request"
+		},
+		{
+			"_id": "req_2cef438cde6d42aab9e93
