@@ -69,4 +69,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"us
+				"text": "{\n\t\"username\":\"Johnny12\",\n\t\"password\": \"test\"\n}"
+			},
+			"created": 1523488562862,
+			"description": ""
