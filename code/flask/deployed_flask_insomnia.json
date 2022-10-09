@@ -89,4 +89,7 @@
 			"parentId": "wrk_350b422392eb4f699be33d278a805cdf",
 			"settingDisableRenderRequestBody": false,
 			"settingEncodeUrl": true,
-			"se
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "129.213.87.202:500
