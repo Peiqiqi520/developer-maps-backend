@@ -92,4 +92,9 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "129.213.87.202:500
+			"url": "129.213.87.202:5000/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_836bf59841954a56b7050c4016542d1b",
+			"authentication": {},
