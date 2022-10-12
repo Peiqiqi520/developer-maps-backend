@@ -114,4 +114,9 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "129.213.87.202:5000/lo
+			"url": "129.213.87.202:5000/logout/access",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ccc0fa6f8ba244d8aa882b2631a35cda",
+		
