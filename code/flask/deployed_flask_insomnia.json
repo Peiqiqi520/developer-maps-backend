@@ -131,4 +131,8 @@
 			"name": "Logout/Refresh",
 			"parameters": [],
 			"parentId": "wrk_350b422392eb4f699be33d278a805cdf",
-			"settingDisable
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"s
