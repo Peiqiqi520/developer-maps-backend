@@ -128,4 +128,7 @@
 			"metaSortKey": -1522205873619,
 			"method": "POST",
 			"modified": 1524617090793,
-			"name
+			"name": "Logout/Refresh",
+			"parameters": [],
+			"parentId": "wrk_350b422392eb4f699be33d278a805cdf",
+			"settingDisable
