@@ -135,4 +135,8 @@
 			"settingEncodeUrl": true,
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
-			"s
+			"settingStoreCookies": true,
+			"url": "129.213.87.202:5000/logout/refresh",
+			"_type": "request"
+		},
+		{
