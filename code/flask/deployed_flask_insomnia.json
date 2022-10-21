@@ -153,4 +153,8 @@
 				}
 			],
 			"isPrivate": false,
-			"metaSo
+			"metaSortKey": -1522205900598,
+			"method": "GET",
+			"modified": 1524622043229,
+			"name": "getCurrentAsset",
+			"par
