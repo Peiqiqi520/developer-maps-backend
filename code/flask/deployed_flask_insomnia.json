@@ -157,4 +157,6 @@
 			"method": "GET",
 			"modified": 1524622043229,
 			"name": "getCurrentAsset",
-			"par
+			"parameters": [],
+			"parentId": "wrk_350b422392eb4f699be33d278a805cdf",
+			"settingDisableRenderRequestBody": false
