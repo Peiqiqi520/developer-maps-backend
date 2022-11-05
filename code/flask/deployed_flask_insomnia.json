@@ -193,4 +193,10 @@
 			"settingDisableRenderRequestBody": false,
 			"settingEncodeUrl": true,
 			"settingRebuildPath": true,
-			"settingSendCookies
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "129.213.87.202:5000/users",
+			"_type": "request"
+		}
+	]
+}
