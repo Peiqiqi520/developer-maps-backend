@@ -1,0 +1,81 @@
+
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-03-03T02:43:36.455Z",
+	"__export_source": "insomnia.desktop.app:v5.10.1",
+	"resources": [
+		{
+			"_id": "wrk_c397d99253ad4d13a75cde922e4c0b64",
+			"parentId": null,
+			"modified": 1519942960241,
+			"created": 1498048277495,
+			"name": "Insomnia",
+			"description": "",
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_7772b4b38c0d4f888cb5561b5f277921",
+			"parentId": "wrk_c397d99253ad4d13a75cde922e4c0b64",
+			"modified": 1498064197428,
+			"created": 1498064197428,
+			"name": "Base Environment",
+			"data": {},
+			"color": null,
+			"isPrivate": false,
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_9e271343924a49abb5f5b978f8f12d68",
+			"parentId": "wrk_c397d99253ad4d13a75cde922e4c0b64",
+			"modified": 1507864049675,
+			"created": 1498064211467,
+			"name": "Default Jar",
+			"cookies": [
+				{
+					"creation": "2017-08-17T00:08:40.904Z",
+					"key": "PHPSESSID",
+					"value": "22dji65q5pljorgeigs5h23li7",
+					"domain": "10.0.0.1",
+					"path": "/",
+					"httpOnly": true,
+					"hostOnly": true,
+					"lastAccessed": "2017-08-17T00:08:40.904Z",
+					"id": "3246570893610814"
+				},
+				{
+					"creation": "2017-09-18T00:12:29.485Z",
+					"key": "AWSELB",
+					"value": "EDB559ED08F5F20223B09E8E8A259AFD2DFC7AEC7F35823EC4E2BE246C1A65F961364CDE0912E842771509E320D9E884A1A4567500DF2BED2BB32A3C0D681409C1E1070B64",
+					"domain": "www.agilelearner.com",
+					"path": "/",
+					"hostOnly": true,
+					"lastAccessed": "2017-09-18T00:12:29.485Z",
+					"id": "10811693393177046"
+				},
+				{
+					"creation": "2017-10-13T03:07:29.674Z",
+					"key": "__cfduid",
+					"value": "d0b62275bdabc5d1b6bed3fc65e13d5a11507864137",
+					"expires": "2018-10-13T03:08:57.000Z",
+					"path": "/",
+					"domain": "coinbase.com",
+					"httpOnly": true,
+					"hostOnly": false,
+					"lastAccessed": "2017-10-13T03:07:29.674Z",
+					"id": "11334102302959037"
+				}
+			],
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_52ce967593714b688f02cdb659efaeb8",
+			"parentId": "wrk_c397d99253ad4d13a75cde922e4c0b64",
+			"modified": 1520044796627,
+			"created": 1520041182201,
+			"url": "129.213.108.211:3000/api/org.acme.biznet.Property",
+			"name": "Get Properties",
+			"description": "Properties have a PropertyId, owner, and description",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
