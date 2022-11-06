@@ -208,3 +208,38 @@
 			"metaSortKey": -1520041175395,
 			"settingStoreCookies": true,
 			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_bc9f0de0f7e641ffb6ae86fd5bb74b76",
+			"parentId": "wrk_c397d99253ad4d13a75cde922e4c0b64",
+			"modified": 1520044809381,
+			"created": 1520044189113,
+			"url": "http://129.213.108.211:3000/api/org.acme.biznet.Trade",
+			"name": "Make Transaction",
+			"description": "Initiate an exchange of a Property to another Trader. Currently only need to specify the Asset being traded, and the TraderId of the new owner.",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{ \n   \"$class\": \"org.acme.biznet.Trade\", \n   \"property\": \"Asset A\", \n   \"newOwner\": \"TRADER2\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_38215a425b85444db72003c206418ec4"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1520041175270,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		}
+	]
+}
