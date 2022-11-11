@@ -18,4 +18,10 @@
 			"parentId": "wrk_c397d99253ad4d13a75cde922e4c0b64",
 			"modified": 1498064197428,
 			"created": 1498064197428,
-			"name": "Ba
+			"name": "Base Environment",
+			"data": {},
+			"color": null,
+			"isPrivate": false,
+			"_type": "environment"
+		},
+		
