@@ -34,4 +34,9 @@
 				{
 					"creation": "2017-08-17T00:08:40.904Z",
 					"key": "PHPSESSID",
-					"value": "22dji65q5pljorgei
+					"value": "22dji65q5pljorgeigs5h23li7",
+					"domain": "10.0.0.1",
+					"path": "/",
+					"httpOnly": true,
+					"hostOnly": true,
+					"lastAcces
