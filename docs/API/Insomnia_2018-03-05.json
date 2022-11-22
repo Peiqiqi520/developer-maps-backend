@@ -59,4 +59,7 @@
 					"expires": "2018-10-13T03:08:57.000Z",
 					"path": "/",
 					"domain": "coinbase.com",
-			
+					"httpOnly": true,
+					"hostOnly": false,
+					"lastAccessed": "2017-10-13T03:07:29.674Z",
+					"id": "816161
