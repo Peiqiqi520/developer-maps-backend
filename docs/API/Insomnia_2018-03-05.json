@@ -110,4 +110,9 @@
 			"settingStoreCookies": true,
 			"settingSendCookies": true,
 			"settingDisableRenderRequestBody": false,
-			"sett
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_5a65c330384245e2a7f34b76da497180",
+			"parentId"
