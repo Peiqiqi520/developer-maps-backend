@@ -118,4 +118,7 @@
 			"parentId": "wrk_c397d99253ad4d13a75cde922e4c0b64",
 			"modified": 1520258384917,
 			"created": 1520043956756,
-			"url": 
+			"url": "http://129.213.108.205:3000/api/org.acme.biznet.Property",
+			"name": "Make Property",
+			"description": "",
+			"method
