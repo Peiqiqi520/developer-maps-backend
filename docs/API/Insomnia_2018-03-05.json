@@ -124,4 +124,5 @@
 			"method": "POST",
 			"body": {
 				"mimeType": "application/json",
-				"text": "{ \n   \"$class\": \"org.acme.b
+				"text": "{ \n   \"$class\": \"org.acme.biznet.Property\", \n   \"PropertyId\": \"Asset G\", \n   \"description\": \"string\", \n   \"owner\": \"TRADER2\" \n}"
+			},
