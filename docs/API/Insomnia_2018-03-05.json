@@ -126,3 +126,9 @@
 				"mimeType": "application/json",
 				"text": "{ \n   \"$class\": \"org.acme.biznet.Property\", \n   \"PropertyId\": \"Asset G\", \n   \"description\": \"string\", \n   \"owner\": \"TRADER2\" \n}"
 			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_ad0c8c9
