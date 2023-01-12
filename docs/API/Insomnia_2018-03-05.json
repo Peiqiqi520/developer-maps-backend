@@ -136,4 +136,7 @@
 			],
 			"authentication": {},
 			"metaSortKey": -1520041175370,
-			"settingStoreCookies": 
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true
