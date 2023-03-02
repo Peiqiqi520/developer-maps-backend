@@ -173,4 +173,4 @@
 			"method": "POST",
 			"body": {
 				"mimeType": "application/json",
-				"text": "{ \n   \"$class\": \"org.acme.biznet.Tra
+				"text": "{ \n   \"$class\": \"org.acme.biznet.Trader\", \n   \"traderId\": \"TRADER2\", \n   \"firstName\": \"Patchouli\", \n   \"lastName\": \"Knowledge\" \n}"
