@@ -174,3 +174,9 @@
 			"body": {
 				"mimeType": "application/json",
 				"text": "{ \n   \"$class\": \"org.acme.biznet.Trader\", \n   \"traderId\": \"TRADER2\", \n   \"firstName\": \"Patchouli\", \n   \"lastName\": \"Knowledge\" \n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application
