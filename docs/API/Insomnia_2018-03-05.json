@@ -221,4 +221,5 @@
 			"description": "Initiate an exchange of a Property to another Trader. Currently only need to specify the Asset being traded, and the TraderId of the new owner.",
 			"method": "POST",
 			"body": {
-				"mimeTyp
+				"mimeType": "application/json",
+				"text": "{ \n   \"$class\": \"org.acme.biznet.Trade\", \n   \"property\": \"Asse
