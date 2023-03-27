@@ -222,4 +222,10 @@
 			"method": "POST",
 			"body": {
 				"mimeType": "application/json",
-				"text": "{ \n   \"$class\": \"org.acme.biznet.Trade\", \n   \"property\": \"Asse
+				"text": "{ \n   \"$class\": \"org.acme.biznet.Trade\", \n   \"property\": \"Asset A\", \n   \"newOwner\": \"TRADER2\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+			
