@@ -174,3 +174,54 @@ public void GetVerifiedTransactionOneAsset()
 In most places, use var instead of full type information. For example (including but not limited to this example):
 
 Tuple<String, List<String>, bool> expectedResult = new Tuple<string, List<string>, bool>("John address", assets, true);
+
+to
+
+var expectedResult = new Tuple<string, List<string>, bool>("John address", assets, true);
+
+
+
+
+FailToGetTransactionVerify
+I don't know the requirements, but I am wonderfing, should the caller of GetTransactionVerify know that there was an issue communicating instead of walking away thinking they could not get a verification? In other words, should there be a difference between the service returning a false and not being able to talk to the service at all?
+
+
+
+[TestMethod]
+public void SendSuccessfulOneAccessFromVerifiedTransaction()
+{
+    Mock<IBlockChainService> mockBlockChainService = new Mock<IBlockChainService>();
+    List<String> assets = new List<string>() { "Asset B" };
+    mockBlockChainService.Setup(x => x.VerifiedTransaction("John address", assets)).Returns(true);
+    UserWallet wallet = new UserWallet(mockBlockChainService.Object);
+    Tuple<String, List<String>, bool> verifiedTransaction = wallet.GetTransactionVerify("John address", assets);
+    wallet.SendVerifiedTransaction(verifiedTransaction);
+    List<String> expectedResult = new List<string>()
+    {
+        "Asset A",
+        "Asset C"
+    };
+    Assert.IsTrue(expectedResult.SequenceEqual(wallet.assets));
+}
+
+This test is doing way too much than it should. The focus of this test is on 
+wallet.SendVerifiedTransaction(verifiedTransaction);
+There is really no reason to do most of the work that this test is doing before this line. Instead, we can do the following:
+
+var verifiedTransaction = new Tuple<String, List<String> bool>(...create a sample data here ...);
+
+wallet.SendVerifiedTransaction(verifiedTransaction);
+
+List<String> expectedResult = new List<string>()
+{
+    "Asset A",
+    "Asset C"
+};
+Assert.IsTrue(expectedResult.SequenceEqual(wallet.assets));
+
+
+
+
+Same issue with SendSuccessfulTwoAccessFromVerifiedTransaction.
+
+Same with SendSuccessfulAllAccessFromVerifiedTransaction.
