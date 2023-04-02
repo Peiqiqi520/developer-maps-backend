@@ -49,3 +49,128 @@ if(Assets.Contains(asset)) return asset else return "";
 
 
 The other UserWallet:
+
+private IBlockChainService _blockChainService; Please give a blank line after this line.
+
+
+public List<String> assets = new List<String>() Please use a property instead of field, like mentioned previously. 
+
+
+
+
+
+public Tuple<String, List<String>, bool> GetTransactionVerify(String _receiverAddress, List<String> _asset) //Did you mean VerifyTransaction for method name? Also receiverAddress instead of _receiverAddress. assets (plural) instead of _asset
+{
+    bool verify; //Venkat: verified instead of verify?
+    try
+    {
+        verify = _blockChainService.VerifiedTransaction(_receiverAddress, _asset);
+    }
+    catch (Exception ex)
+    {
+        verify = false;
+    }
+
+    var transactionVerify = new Tuple<String, List<String>, bool>(_receiverAddress, _asset, verify);
+    return transactionVerify; //Venkat: merge with previous line
+}
+
+
+
+
+public void ReceivedAsset(List<String> _assets) //Venkat: assets instead of _assets
+{
+    foreach (String asset in _assets)
+        assets.Add(asset);
+}
+Is there an AddAll method?
+
+
+
+public void SendVerifiedTransaction(Tuple<String, List<String>, bool> verifiedTrasaction)
+{
+    foreach (var asset in verifiedTrasaction.Item2)
+    {
+        if (verifiedTrasaction.Item3 == true)
+        {
+            assets.Remove(asset);
+        }
+    }
+}
+
+to
+
+public void SendVerifiedTransaction(Tuple<String, List<String>, bool> verifiedTrasaction)
+{
+  if (verifiedTrasaction.Item3 == true)
+  {
+    foreach (var asset in verifiedTrasaction.Item2)
+    {
+      assets.Remove(asset);  //Venkat: Assets.Remove(asset);
+    }
+  }
+}
+
+
+
+
+
+
+UnitTest1: Please give a good name for this.
+
+
+[TestMethod]
+public void SendOneAsset()
+{
+
+    UserWallet wallet = new UserWallet();
+    String receiverAddress = wallet.GetReceiverAddress("John address");
+    String asset = wallet.SelectedAsset("Asset B");
+    String sendMessage = wallet.Send(receiverAddress, asset);
+    Assert.AreEqual("Send Asset B to John address", sendMessage);
+}
+
+Should "Send Asset B... " be "Sent Asset B" ?
+
+Please integrate this into the CI build using nant.
+
+
+
+UserWalletTest:
+
+In each of the test, please give one blank line between the three parts of AAA; Arrange, Act, Assert.
+
+For example:
+
+[TestMethod]
+public void GetVerifiedTransactionOneAsset()
+{
+    Mock<IBlockChainService> mockBlockChainService = new Mock<IBlockChainService>();
+    List<String> assets = new List<string>() { "Asset B" };
+    mockBlockChainService.Setup(x => x.VerifiedTransaction("John address", assets)).Returns(true);
+    UserWallet wallet = new UserWallet(mockBlockChainService.Object);
+    Tuple<String, List<String>, bool> sendMessage = wallet.GetTransactionVerify("John address", assets);
+    Tuple<String, List<String>, bool> expectedResult = new Tuple<string, List<string>, bool>("John address", assets, true);
+    Assert.AreEqual(expectedResult, sendMessage);
+    
+}
+
+to
+
+[TestMethod]
+public void GetVerifiedTransactionOneAsset()
+{
+		List<String> assets = new List<string>() { "Asset B" };
+    Mock<IBlockChainService> mockBlockChainService = new Mock<IBlockChainService>();
+    mockBlockChainService.Setup(x => x.VerifiedTransaction("John address", assets)).Returns(true);
+    
+  UserWallet wallet = new UserWallet(mockBlockChainService.Object);
+  Tuple<String, List<String>, bool> sendMessage = wallet.GetTransactionVerify("John address", assets);
+  
+  Tuple<String, List<String>, bool> expectedResult = new Tuple<string, List<string>, bool>("John address", assets, true);
+  Assert.AreEqual(expectedResult, sendMessage);
+}
+
+In most places, use var instead of full type information. For example (including but not limited to this example):
+
+Tuple<String, List<String>, bool> expectedResult = new Tuple<string, List<string>, bool>("John address", assets, true);
