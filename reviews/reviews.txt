@@ -1,0 +1,51 @@
+
+[Venkat 02/26/2018 4:37 PM MST]
+
+There are two two files with the same name UserWallet.cs. Consider giving different names to avoid confusion. If they are the same, please remove one.
+
+
+It is better to change
+public List<String> assets = new List<String>()
+{
+    "Asset A",
+    "Asset B",
+    "Asset C"
+};
+
+to (public property, private field) something like:
+
+public List<String> Assets { get; private set; } 
+
+public UserWallet() {
+  Asset = new List<String() {
+    "Asset A",
+    ...
+  };
+}
+
+
+
+
+public String SelectedAsset(String _asset)
+to
+public String SelectedAsset(String asset)
+
+
+Avoid using _ in parameter names.
+
+
+return "Send " + _asset + " to " + _receiverAddress;
+please use return String.Format(......)             
+
+
+ReceivedAsset should this be called ReceiveAsset (without d)?
+
+Remove commented out code.
+                          
+
+SelectedAsset
+Should be do something like 
+if(Assets.Contains(asset)) return asset else return "";
+
+
+The other UserWallet:
